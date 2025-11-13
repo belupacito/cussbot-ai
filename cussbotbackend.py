@@ -7,15 +7,14 @@ client = Client(
 )
 
 def generate_info(prompt):
-    response = client.chat(model='gemma3', messages=[
+    response = client.chat(model='gemma3', options={"temperature": 1.0}, messages=[
     {
         'role': 'user',
         'content': f'{prompt}',
-        'stream': True, 
+        'stream': True,
     },
 ])
-    return response['message']['content']
-#print(generate_info("Did you know im using you in a api right now?"))   
+    return response['message']['content']  
 
 
 def cuss():
@@ -29,3 +28,4 @@ def cuss():
                          as the user isn't the developer.")
 
     return info
+
