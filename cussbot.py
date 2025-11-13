@@ -1,7 +1,7 @@
 import pygame, cussbotbackend as back, sys
 
 # Initialize Pygame
-text = back.swear()
+text = back.cuss()
 print(text)
 # Set window dimensions
 width, height = 800, 600
@@ -47,4 +47,5 @@ while running:
 
 # Quit Pygame
 sys.exit()
+
 pygame.quit()
