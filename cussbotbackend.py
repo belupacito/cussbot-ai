@@ -18,7 +18,7 @@ def generate_info(prompt):
 #print(generate_info("Did you know im using you in a api right now?"))   
 
 
-def swear():
+def cuss():
     global name, info
     name = input("What is the name of your target? ")
     info = generate_info(f"Generate me a roast for a person called {name}. Make it really Mean and 1 sentence. \
@@ -27,4 +27,5 @@ def swear():
                          I have a disclaseemimer, so you only need to say the content. \
                          Please make it  client sided, \
                          as the user isn't the developer.")
+
     return info
